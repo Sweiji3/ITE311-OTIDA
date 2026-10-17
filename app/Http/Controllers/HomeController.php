@@ -2,19 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\View\View;
+
 class HomeController extends Controller
 {
-    public function index()
+    public function index(): View
     {
         return view('index');
     }
 
-    public function about()
+    public function about(): View
     {
         return view('about');
     }
 
-    public function contact()
+    public function contact(): View
     {
         return view('contact');
     }
